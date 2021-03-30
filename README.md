@@ -1,2 +1,2 @@
-# css-elements
+# CSS elements
 CSS loaders, buttons etc.
