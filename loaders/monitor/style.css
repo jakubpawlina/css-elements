@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+body
+{
+	background-color: #3f3f3f;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+}
+
+.container
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.computer-screen
+{
+	position: relative;
+	width: 384px;
+	height: 216px;
+	box-sizing: border-box;
+	border: 10px solid #fff;
+	border-radius: 5px;
+	background-color: #222;
+	overflow: hidden;
+}
+
+.computer-screen::before
+{
+	content: "Loading...";
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #222;
+	font-weight: bold;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 364px;
+	height: 196px;
+	background-color: crimson;
+	border-radius: 0;
+	animation: loading 5s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+}
+
+.computer-stand-1
+{
+	position: absolute;
+	top: 216px;
+	left: 182px;
+	width: 10px;
+	height: 20px;
+	box-sizing: border-box;
+	border: 10px solid #fff;
+	border-radius: 0;
+}
+
+.computer-stand-2
+{
+	position: absolute;
+	top: 236px;
+	left: 92px;
+	width: 200px;
+	height: 10px;
+	box-sizing: border-box;
+	border: 5px solid #fff;
+	border-radius: 10px 10px 0 0;
+}
+
+.pc
+{
+	position: absolute;
+	top: 266px;
+	left: 50px;
+	width: 284px;
+	height: 50px;
+	box-sizing: border-box;
+	border: 8px solid #fff;
+	border-radius: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@keyframes loading
+{
+	0%
+	{
+		transform: scale(2);
+		background-color: greenyellow;
+	}
+	25%
+	{
+		background-color: coral;
+	}
+	50%
+	{
+		transform: scale(0);
+		background-color: turquoise;
+	}
+	75%
+	{
+		background-color: coral;
+	}
+	100%
+	{
+		transform: scale(2);
+		background-color: greenyellow;
+	}
+}
